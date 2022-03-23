@@ -1,0 +1,11 @@
+[package]
+name = "dong_quy"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+near-sdk = "3.1.0"
+[target.wasm32-unknown-unknown]
+rustflags = ["-C", "link-arg=-s"]
